@@ -8,11 +8,13 @@ import { HomeComponent } from './views/home/home.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import { LiveListComponent } from './views/home/live-list/live-list.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @NgModule({
   declarations: [  //declarando e incluindo os componentes
-    AppComponent, HomeComponent
+    AppComponent, HomeComponent, LiveListComponent
   ],
   imports: [ //inports do componentes esternos. Ex componentes do angular material
     BrowserModule,
@@ -20,7 +22,8 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
